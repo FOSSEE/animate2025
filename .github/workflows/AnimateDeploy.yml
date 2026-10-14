@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: animate2025
+    runs-on: [self-hosted, Linux, X64, animate2025]
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
