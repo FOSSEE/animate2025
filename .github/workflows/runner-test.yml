@@ -1,0 +1,14 @@
+name: Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: [self-hosted, animate2025]
+    steps:
+      - name: Check runner
+        run: |
+          hostname
+          whoami
+          echo "Runner picked up the job"
